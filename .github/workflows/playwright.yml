@@ -10,6 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright:v1.34.3-jammy
+      env:
+        LANG: pl_PL.UTF-8
+        LANGUAGE: pl_PL:pl
+        LC_ALL: pl_PL.UTF-8
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
