@@ -3,7 +3,7 @@ import { MainPage } from '../pages/main.page';
 
 test('Visual Test - Google Homepage Layout', async ({ page }) => {
   const mainPage = new MainPage(page)
-  
+  await page.waitForTimeout(5000)
   await page.goto('/');
   await mainPage.acceptTermsButton.click()
   await expect(page).toHaveScreenshot('google-main-page.png'); 
