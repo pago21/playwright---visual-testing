@@ -27,6 +27,7 @@ export default defineConfig({
     baseURL: 'https://www.google.com/',
     locale: 'en-GB',
     geolocation: { longitude: 51.9194, latitude: 19.1451 },
+    permissions: ['geolocation'],
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
   },
